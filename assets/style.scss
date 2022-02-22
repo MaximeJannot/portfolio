@@ -1,0 +1,112 @@
+$bg-primary: #212121;
+$font-primary: #a3fff1;
+$fs-h1: 2.5rem;
+$fs-h2: 2rem;
+$fs-h3: 1.8rem;
+$fs-p: 1.2rem;
+
+/* global */
+body {
+	background: $bg-primary;
+	color: $font-primary;
+	font-size: $fs-p;
+	line-height: 1.5;
+	font-family: 'Roboto Mono', monospace;
+}
+a {
+	color: #f7f7f7;
+}
+h3 + ul {
+	padding-top: 10px;
+	padding-right: 10px;
+}
+li {
+    list-style: disc;
+    margin-bottom: 10px;
+}
+li li {
+	list-style-type: circle;
+}
+li > ul {
+	margin-top: 10px;
+}
+li span {
+	margin-right: 5px;
+}
+.hidden {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	text-indent: -99999px;
+}
+.title-bg {
+	color: $bg-primary;
+	background: $font-primary;
+	font-weight: bold;
+}
+
+/* animation */
+.animate {
+	opacity: 0;
+	position: relative;
+	left: -100px;
+	transition: all 1s ease-out;
+}
+.title-animate {
+	display: flex;
+	flex-direction: column;
+	font-size: $fs-h1;
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.subtitle-animate {
+	font-size: $fs-h2;
+	margin-bottom: 50px;
+	text-align: center;
+	opacity: 0;
+	transition: all 1s ease-out;
+}
+.btn-contact {
+	opacity: 0;
+	position: relative;
+	left: -200px;
+	transition: all 1s ease-out;
+	display: flex;
+	margin: 50px auto auto;
+	font-size: $fs-p;
+    padding: 10px 25px;
+    border-radius: 6px;
+    background-color: transparent;
+    color: $font-primary;
+    border: 1px solid $font-primary;
+    text-decoration: unset;
+    span {
+    	margin-right: 10px;
+    }
+}
+
+/* grid */
+main {
+	display: flex;
+	flex-direction: column;
+	padding: 100px;
+}
+h3 {
+	font-size: $fs-h3;
+	margin-bottom: 10px;
+}
+.row {
+	display: flex;
+	gap: 25px;
+}
+.column-1_3 {
+	width: calc(100% / 3);
+	border-left: 1px solid $font-primary;
+	h3 {
+		padding-left: 25px;
+	} 
+	ul {
+		padding-left: 35px;
+	}
+}
