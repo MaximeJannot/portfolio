@@ -65,6 +65,9 @@ body {
 a {
   color: #f7f7f7;
 }
+a:hover {
+  font-weight: bold;
+}
 
 h3 + ul {
   padding-top: 10px;
@@ -154,6 +157,12 @@ li span {
 .btn-contact span {
   margin-right: 10px;
 }
+.btn-contact:hover {
+  background-color: #a3fff1;
+  color: #212121;
+  border: 1px solid #212121;
+  font-weight: bold;
+}
 
 /* grid */
 main {
@@ -165,6 +174,11 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 100px;
+}
+@media (max-width: 1024px) {
+  main {
+    padding: 25px;
+  }
 }
 
 h3 {
@@ -178,6 +192,14 @@ h3 {
   display: flex;
   gap: 25px;
 }
+@media (max-width: 1024px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .column-1_3 {
   width: calc(100% / 3);
@@ -188,4 +210,18 @@ h3 {
 }
 .column-1_3 ul {
   padding-left: 35px;
+}
+@media (max-width: 1024px) {
+  .column-1_3 {
+    width: 100%;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 0.8rem;
+  background: #212121;
+  padding: 5px;
 }
