@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width"/>
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="assets/boot_loader.css">
+  </head>
+  <body>
+    <nav>
+      {% assign pages = site.html_pages | sort:"weight"  %}
+      <ul>
+        {% for p in pages %}
+          <li>
+            <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
+              {{ p.titlenav }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <main role="main">
+      {{ content }}
+    </main>
+    <footer role="contentinfo">2.0.0 - 18/06/2022</footer>
+  </body>
+    <script src="assets/script.js"></script>
+</html>
+

@@ -1,0 +1,28 @@
+---
+layout: default
+title: Blog - Maxime Jannot
+titlenav: Blog
+weight: 2
+---
+
+<h1 class="hidden">Blog</h1>
+<div class="title-animate title-bg" aria-hidden="true">Blog</div>
+<h2 class="hidden">Intégration web, accessibilité numérique et expérimentation en tous genre</h2>
+<div class="subtitle-animate" aria-hidden="true">Intégration web, accessibilité numérique et expérimentation en tous genre</div>
+<div class="row animate">
+	<ul>
+		{% for category in site.categories %}
+		    <li><a href="#">{{ category[0] }}</a></li>
+		{% endfor %}
+	</ul>
+	<ul class="articles">
+		{% for post in site.posts %}
+		<li data-categoerie="{{ post.categories }}">
+			<img src="{{ post.urlimg }}" alt="" /><div>
+			<a href="{{ post.url }}">{{ post.title }}</a>
+			<p>{{ post.categories }}</p>
+			{{ post.excerpt }}
+		</li>
+		{% endfor %}
+	</ul>
+<div class="row animate">

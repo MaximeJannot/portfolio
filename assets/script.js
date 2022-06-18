@@ -28,10 +28,10 @@ typeEffect(title, speed);
 
 // type affect to body
 setTimeout(function(){
+  subtitle.style.opacity = "1";
+  typeEffect(subtitle, speed);
   p.style.opacity = "1";
   p.style.left = "0";
   btn.style.opacity = "1";
   btn.style.left = "0";
-  subtitle.style.opacity = "1";
-  typeEffect(subtitle, speed);
 }, delay);
