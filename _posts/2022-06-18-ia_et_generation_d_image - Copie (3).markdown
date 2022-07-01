@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "IA & Génération d'image"
 date:   2022-06-18 18:36:00 +0200
 categories: Intégration

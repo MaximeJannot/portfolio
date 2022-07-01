@@ -15,23 +15,25 @@ function typeEffect(element, speed) {
 
 
 // application
-var speed = 55;
-var title = document.querySelector('.title-animate');
-var subtitle = document.querySelector('.subtitle-animate');
-var p = document.querySelector('.animate');
-var btn = document.querySelector('.btn-contact');
-var delay = title.innerHTML.length * speed + speed;
+// var speed = 55;
+// var title = document.querySelector('.title-animate');
+// var subtitle = document.querySelector('.subtitle-animate');
+// var p = document.querySelector('.animate');
+// var btn = document.querySelector('.btn-contact');
+// var delay = title.innerHTML.length * speed + speed;
 
-// type affect to header
-typeEffect(title, speed);
+// // type affect to header
+// typeEffect(title, speed);
 
 
-// type affect to body
-setTimeout(function(){
-  subtitle.style.opacity = "1";
-  typeEffect(subtitle, speed);
-  p.style.opacity = "1";
-  p.style.left = "0";
-  btn.style.opacity = "1";
-  btn.style.left = "0";
-}, delay);
+// // type affect to body
+// setTimeout(function(){
+//   if (subtitle) {
+//     subtitle.style.opacity = "1";
+//     typeEffect(subtitle, speed);
+//   }
+//   p.style.opacity = "1";
+//   p.style.left = "0";
+//   btn.style.opacity = "1";
+//   btn.style.left = "0";
+// }, delay);
